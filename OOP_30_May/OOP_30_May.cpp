@@ -1,166 +1,6 @@
-﻿//#include <iostream>
-//using namespace std;
-//
-//class Room
-//{
-//    double square;
-//    string color;
-//
-//};
-//class Food
-//{
-//public:
-//    int meat;
-//    double sugar;
-//    bool salt;
-//    bool coffee;
-//    int pouns;
-//    string recipe;
-//    int fishes;
-//    
-//    void Consume()
-//    {
-//        cout << "Salt kg " << salt << "\n";
-//        cout << "Coffee " << coffee << "\n";
-//        cout << "Recipe  " << recipe << "\n";
-//    }
-//    void Eat()
-//    {
-//
-//    }
-//    void Cook()
-//    {
-//
-//    }
-//};
-//class House 
-//{
-//public:
-//    int storeys;
-//    double square;
-//    bool parking;
-//    bool cozy;
-//    int balcony_count;
-//    string address;
-//    int count_of_rooms;
-//    Room* rooms = new Room[3];
-//    Food* rooms = new Food[3];
-//    void Print()
-//    {
-//        cout << "Floor " << storeys << "\n";
-//        cout << "Balcons " << balcony_count << "\n";
-//        cout << "Adress " << address << "\n";
-//    }
-//    void Sale()
-//    {
-//
-//    }
-//    void Repair()
-//    {
-//
-//    }
-//};
-//
-////
-////class Beverage
-////{
-////public:
-////    int storeys;
-////    double square;
-////    bool parking;
-////    bool cozy;
-////    int balcony_count;
-////    string address;
-////    int count_of_rooms;
-////    Room* rooms = new Room[3];
-////
-////    void Print()
-////    {
-////        cout << "Floor " << storeys << "\n";
-////        cout << "Balcons " << balcony_count << "\n";
-////        cout << "Adress " << address << "\n";
-////    }
-////    void Drink()
-////    {
-////
-////    }
-////    void Serve()
-////    {
-////
-////    }
-////};
-////class Cat
-////{
-////public:
-////    int storeys;
-////    double square;
-////    bool parking;
-////    bool cozy;
-////    int balcony_count;
-////    string address;
-////    int count_of_rooms;
-////    Room* rooms = new Room[3];
-////
-////    void Print()
-////    {
-////        cout << "Floor " << storeys << "\n";
-////        cout << "Balcons " << balcony_count << "\n";
-////        cout << "Adress " << address << "\n";
-////    }
-////    void Sale()
-////    {
-////
-////    }
-////    void Repair()
-////    {
-////
-////    }
-////};
-////class Human
-////{
-////public:
-////    int storeys;
-////    double square;
-////    bool parking;
-////    bool cozy;
-////    int balcony_count;
-////    string address;
-////    int count_of_rooms;
-////    Room* rooms = new Room[3];
-////
-////    void Print()
-////    {
-////        cout << "Floor " << storeys << "\n";
-////        cout << "Balcons " << balcony_count << "\n";
-////        cout << "Adress " << address << "\n";
-////    }
-////    void Sale()
-////    {
-////
-////    }
-////    void Repair()
-////    {
-////
-////    }
-////};
-//int main()
-//{
-//    House AlexHouse;
-//    AlexHouse.Print();
-//    //cout << "Hello World!\n";
-//}
-
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
-// описать дом, его интерьер, экстерьер, и обитателей
-// типы сущностей:
-// дом,
-// комната,
-// холодильник,
-// еда, напиток,
-// кошка
-// жилец (человек)
 class Food //1
 {
 public:
@@ -171,8 +11,7 @@ public:
     int coffee;
     int pounds;
     string recipe;
-    
-    
+   
     void Consume()
     {
         cout << "Meat " << meat << "\n";
@@ -205,6 +44,7 @@ public:
         cout << "Mix " << recipe << "\n";
     }
 };
+
 class Room // 2
 {
     double square;
@@ -236,6 +76,7 @@ class Room // 2
         cout << "Order " << floor << "\n";
     }
 };
+
 class Person // 3
 {
     string mood = "Kind";
@@ -244,6 +85,7 @@ class Person // 3
     double salary;
     double age;
     string hobby;
+
     void Sport()
     {
         cout << "Sport " << hobby << "\n";
@@ -272,6 +114,7 @@ class Person // 3
         cout << "Salary " << salary << "\n";
     }
 };
+
 class Cat // 4
 {
     int age;
@@ -279,6 +122,7 @@ class Cat // 4
     string type = "Domestic";
     double weight;
     double length;
+
     void Show()
     {
         cout << "Color " << color << "\n";
@@ -300,6 +144,7 @@ class Cat // 4
         cout << "Color " << color << "\n";
     }
 };
+
 class Fridge
 {
     string brand;
@@ -307,6 +152,7 @@ class Fridge
     int watts;
     int volume;
     int temparuture;
+
     void Freeze()
     {
         cout << "Lowest temp " << temparuture << "\n";
@@ -334,6 +180,7 @@ class Fridge
     }
 
 };
+
 class Beverage
 {
     int juice;
@@ -363,6 +210,7 @@ class Beverage
     }
 
 };
+
 class House
 {
 public:
@@ -399,6 +247,7 @@ public:
 
     }
 };
+
 int main()
 {
     setlocale(0, "");
@@ -408,9 +257,8 @@ int main()
     AlexHouse.balcony_count = 1;
     AlexHouse.address = "проспект Победы, 45";
     AlexHouse.storeys = 5;
-
-
     AlexHouse.Print();
+    
     Food GlibFood;
 
     GlibFood.meat = 7;
